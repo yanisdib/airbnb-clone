@@ -32,10 +32,10 @@ export default createGlobalStyle`
     body {
         background: ${({ theme }) => theme.body};
         color: ${({ theme }) => theme.text};
-        transition: background color 0.25s linear;
         font-family: "Poppins", sans-serif;
         font-weight: 300;
         -webkit-font-smoothing: antialiased;
+        transition: background color 0.25s linear;
     }
 
     button {
