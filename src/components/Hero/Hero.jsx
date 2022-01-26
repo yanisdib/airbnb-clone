@@ -64,7 +64,8 @@ const Button = styled.span`
     background-color: #FFFFFF;
     width: fit-content;
     height: fit-content;
-    border-radius: 5em;
+    border-radius: 5em;    
+    cursor: pointer;
 `;
 
 const ButtonText = styled.span`
@@ -72,12 +73,11 @@ const ButtonText = styled.span`
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding: 14px 32px;
     font-size: 16px;
     font-weight: 600;
-    padding: 14px 32px;
+    letter-spacing: -0.1px;
     line-height: 28px;
-    cursor: pointer;
-    font-size: 18px;
 `;
 
 
