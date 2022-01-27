@@ -22,20 +22,30 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.div`
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    justify-content: flex-end;
-    align-items: center;
-    width: inherit;
-    height: 100%;
-    max-height: 800px;
-    background-image: url(${bannerImage});
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    padding-bottom: 72px;
+    @media (min-width: 375px) {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: flex-end;
+        align-items: center;
+        width: inherit;
+        height: 100%;
+        max-height: 800px;
+        background-image: url(${bannerImage});
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0px;
+        padding-bottom: 72px;
+    }
+
+    @media (min-width: 744px) {
+        border-radius: 0px;
+    }
+
+    @media (min-width: 1128px) {
+        border-radius: 12px;
+    }
 `;
 
 const Heading = styled.h2`
@@ -44,7 +54,7 @@ const Heading = styled.h2`
         flex-direction: row;
         font-size: 1.5rem;
         font-weight: 500;
-        line-height: 84px;
+        line-height: 80px;
         letter-spacing: -1.5px;
         color: var(--hero-text-color);
     }
@@ -54,7 +64,7 @@ const Heading = styled.h2`
     }
 
     @media (min-width: 1128px) {
-        font-size: 2.82rem;
+        font-size: 2.92rem;
     }
 `;
 
@@ -73,11 +83,11 @@ const ButtonText = styled.span`
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 14px 32px;
-    font-size: 16px;
+    padding: 13.5px 34px;
+    font-size: 17.5px;
     font-weight: 600;
     letter-spacing: -0.1px;
-    line-height: 28px;
+    line-height: 29px;
 `;
 
 
