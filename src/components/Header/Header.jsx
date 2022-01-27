@@ -1,20 +1,26 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Language } from '@styled-icons/material';
 
 import { Container, MenuButton, MenuDropdown } from '..';
 
-
 import whiteLogo from '../../assets/svg/logo-original-w.svg';
+import originalLogo from '../../assets/svg/logo-original.svg';
 
 
 const StyledHeader = styled.header`
     display: flex;
+    position: ${({ isWindowScrolled }) => isWindowScrolled ? 'fixed' : 'absolute'};
     flex-direction: row;
     --header-brand-color: #FF385C;
-    background-color: var(--ui-brand-color);
-    color: #FFFFFF;
-    padding: var(--ui-padding-y) 0;
+    background-color: ${({ isWindowScrolled }) => isWindowScrolled ? '#FFFFFF' : 'var(--ui-brand-color)'};
+    color: ${({ isWindowScrolled }) => isWindowScrolled ? 'var(--ui-brand-color)' : '#FFFFFF'};
+    fill: ${({ isWindowScrolled }) => isWindowScrolled ? 'var(--ui-brand-color)' : '#FFFFFF'};
+    padding: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    transition: all 200ms ease-in-out;
 `;
 
 const Wrapper = styled.div`
@@ -22,7 +28,7 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: var(--ui-brand-color);
+    background-color: transparent;
 `;
 
 const Content = styled.div`
@@ -51,7 +57,7 @@ const SearchTab = styled.div`
     display: flex;
     position: relative;
     text-align: center;
-    font-size: 16px;
+    font-size: 15.5px;
     line-height: 20px;
     padding: 10px 16px;
 
@@ -95,14 +101,14 @@ const UserNav = styled.div`
     align-items: center;
 
     &:last-of-type div{
-        margin-left: 8px !important;
+        margin-left: 8px;
     }
 
     button {
         width: fit-content;
         height: fit-content;
         background: transparent;
-        color: #FFFFFF;
+        color: inherit;
         padding: 12px;
         border-radius: 10rem;
         font-size: 14px;
@@ -115,7 +121,6 @@ const UserNav = styled.div`
         }
 
         svg {
-            fill: #FFFFFF;
             stroke-width: 1px;
             height: 20px;
         }
@@ -125,31 +130,53 @@ const UserNav = styled.div`
 
 function Header() {
     const [isMenuDropdownDisplayed, setIsMenuDropdownDisplayed] = useState(false);
+    const [isWindowScrolled, setIsWindowScrolled] = useState(false);
+    const [logo, setLogo] = useState(whiteLogo);
+
+    const changeHeaderOnScroll = () => {
+        if (window.scrollY > 5) {
+            setIsWindowScrolled(true)
+            setLogo(originalLogo)
+        }
+        else {
+            setLogo(whiteLogo)
+            setIsWindowScrolled(false)
+        }
+    }
+
+    useEffect(() => window.addEventListener('scroll', changeHeaderOnScroll), [])
+
 
     return (
-        <StyledHeader>
+        <StyledHeader isWindowScrolled={isWindowScrolled}>
             <Wrapper>
                 <Container>
                     <Content>
                         <Logo>
-                            <iframe src={whiteLogo} width={102} height={50} >
-                                <img src={whiteLogo} width={102} height={50} />
+                            <iframe src={logo} width={102} height={50}>
+                                <img src={logo} width={102} height={50} />
                             </iframe>
                         </Logo>
                         <SearchNav>
                             {
                                 // TODO: onClick the current Active Tab changes with state (1 as default) taking the current selected Tab
                             }
-                            <SearchTab isSearchTabActive={true}>Places to stay</SearchTab>
-                            <SearchTab>Experiences</SearchTab>
-                            <SearchTab>Online experiences</SearchTab>
+                            {
+                                !isWindowScrolled && (
+                                    <>
+                                        <SearchTab isSearchTabActive={true}>Places to stay</SearchTab>
+                                        <SearchTab>Experiences</SearchTab>
+                                        <SearchTab>Online Experiences</SearchTab>
+                                    </>
+                                )
+                            }
                         </SearchNav>
                         <UserNav>
+                            {isMenuDropdownDisplayed && <MenuDropdown />}
                             <button>Become a Host</button>
                             <button>
                                 <Language />
                             </button>
-                            {isMenuDropdownDisplayed && <MenuDropdown />}
                             <MenuButton
                                 onClick={() => setIsMenuDropdownDisplayed(prevIsMenuDropdownDisplayed => !prevIsMenuDropdownDisplayed)}
                             />
