@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 
 const Button = styled.button`
     display: flex !important;
-    column-gap: 8px !important;
+    column-gap: 0px !important;
     align-items: center !important;
     justify-content: center !important;
     height: fit-content !important;
