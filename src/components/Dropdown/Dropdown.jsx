@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export default styled.div`
     position: absolute;
-    width: 100%;
+    width: ${({ width }) => width ? `${width}%` : '100%'};
     min-height: 200px;
     top: 60px;
     right: 0;
