@@ -23,7 +23,7 @@ describe('useFormField hook', () => {
         expect(updateValue).toHaveBeenCalled()
     })
 
-    it('updates state if checkbox', () => {
+    it('updates state if event type is checkbox', () => {
         const event = { target: { type: 'checkbox', checked: true } };
 
         const { result } = renderHook(useFormField);
@@ -33,7 +33,7 @@ describe('useFormField hook', () => {
         expect(result.current[0]).toEqual(true) // current[0] is the current state value
     })
 
-    it('updates state if not checkbox', () => {
+    it('updates state if event type is not checkbox', () => {
         const event = { target: { type: 'text', value: 'Yanis Dib' } };
 
         const { result } = renderHook(useFormField);
