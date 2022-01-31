@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Language } from '@styled-icons/material';
 
-import { Container, MenuButton, MenuDropdown } from '..';
+import { Container, MenuButton, MenuDropdown, SearchBar } from '..';
 
 import whiteLogo from '../../assets/svg/logo-original-w.svg';
 import originalLogo from '../../assets/svg/logo-original.svg';
@@ -26,7 +26,7 @@ const StyledHeader = styled.header`
 const Wrapper = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     background-color: transparent;
 `;
@@ -35,20 +35,26 @@ const Content = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
 `;
 
 const Logo = styled.div`
     display: flex;
-    flex: 3;
+    flex: 1 0 140px;
 `;
 
-const SearchNav = styled.div`
+const SearchForm = styled.form`
     display: flex;
-    flex: 3;
-    row-gap: 20px;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    max-width: 850px;
+    margin: 0 auto !important;
+`;
+
+const SearchTabsGroup = styled.div`
+    display: flex;
     align-items: center;
     height: 80px;
 `;
@@ -95,10 +101,11 @@ const SearchTab = styled.div`
 
 const UserNav = styled.div`
     display: flex;
-    flex: 3;
+    flex: 1 0 140px;
     position: relative;
     justify-content: flex-end;
     align-items: center;
+    height: 80px;
 
     &:last-of-type div{
         margin-left: 8px;
@@ -153,24 +160,27 @@ function Header() {
                 <Container>
                     <Content>
                         <Logo>
-                            <iframe src={logo} width={102} height={50}>
-                                <img src={logo} width={102} height={50} />
+                            <iframe src={logo} width={102} height={80}>
+                                <img src={logo} width={102} height={80} />
                             </iframe>
                         </Logo>
-                        <SearchNav>
+                        <SearchForm>
                             {
                                 // TODO: onClick the current Active Tab changes with state (1 as default) taking the current selected Tab
                             }
                             {
                                 !isWindowScrolled && (
                                     <>
-                                        <SearchTab isSearchTabActive={true}>Places to stay</SearchTab>
-                                        <SearchTab>Experiences</SearchTab>
-                                        <SearchTab>Online Experiences</SearchTab>
+                                        <SearchTabsGroup>
+                                            <SearchTab isSearchTabActive={true}>Places to stay</SearchTab>
+                                            <SearchTab>Experiences</SearchTab>
+                                            <SearchTab>Online Experiences</SearchTab>
+                                        </SearchTabsGroup>
+                                        <SearchBar />
                                     </>
                                 )
                             }
-                        </SearchNav>
+                        </SearchForm>
                         <UserNav>
                             {isMenuDropdownDisplayed && <MenuDropdown />}
                             <button>Become a Host</button>
