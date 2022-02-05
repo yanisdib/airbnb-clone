@@ -1,3 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MenuButton component renders correctly without crashing 1`] = `ShallowWrapper {}`;
+exports[`MenuButton component renders correctly without crashing 1`] = `
+<styled.div>
+  <styled.button
+    onClick={[Function]}
+  >
+    <Styled(Menu) />
+    <styled.div>
+      <Styled(AccountCircle) />
+    </styled.div>
+  </styled.button>
+</styled.div>
+`;

@@ -1,3 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Hero component renders correctly without crashing 1`] = `ShallowWrapper {}`;
+exports[`Hero component renders correctly without crashing 1`] = `
+<styled.section>
+  <styled.div>
+    <styled.div>
+      <styled.div>
+        <styled.h2>
+          Not sure where to go? Perfect.
+        </styled.h2>
+        <styled.span>
+          <styled.span>
+            I'm flexible
+          </styled.span>
+        </styled.span>
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</styled.section>
+`;

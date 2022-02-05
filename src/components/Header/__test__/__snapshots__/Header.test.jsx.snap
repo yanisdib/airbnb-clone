@@ -1,3 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header component renders correctly without crashing 1`] = `ShallowWrapper {}`;
+exports[`Header component renders correctly without crashing 1`] = `
+<styled.header
+  isWindowScrolled={false}
+>
+  <styled.div>
+    <styled.div>
+      <styled.div>
+        <styled.div>
+          <iframe
+            height={80}
+            src="logo-original-w.svg"
+            width={102}
+          >
+            <img
+              height={80}
+              src="logo-original-w.svg"
+              width={102}
+            />
+          </iframe>
+        </styled.div>
+        <styled.form>
+          <styled.div>
+            <styled.div
+              isSearchTabActive={true}
+            >
+              Places to stay
+            </styled.div>
+            <styled.div>
+              Experiences
+            </styled.div>
+            <styled.div>
+              Online Experiences
+            </styled.div>
+          </styled.div>
+          <SearchBar
+            setCheckInDate={[Function]}
+            setCheckOutDate={[Function]}
+            setGuests={[Function]}
+            setLocation={[Function]}
+          />
+        </styled.form>
+        <styled.div>
+          <button>
+            Become a Host
+          </button>
+          <button>
+            <Language />
+          </button>
+          <MenuButton
+            onClick={[Function]}
+          />
+        </styled.div>
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</styled.header>
+`;

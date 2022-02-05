@@ -1,3 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MenuDropdown component renders correctly without crashing 1`] = `ShallowWrapper {}`;
+exports[`MenuDropdown component renders correctly without crashing 1`] = `
+<styled.div
+  width={46}
+>
+  <styled.div>
+    <styled.ul>
+      <a
+        href="/"
+      >
+        Sign up
+      </a>
+      <a
+        href="/"
+      >
+        Log in
+      </a>
+    </styled.ul>
+    <styled.ul>
+      <a
+        href="/"
+      >
+        Host your home
+      </a>
+      <a
+        href="/"
+      >
+        Host an experience
+      </a>
+      <a
+        href="/"
+      >
+        Help
+      </a>
+    </styled.ul>
+  </styled.div>
+</styled.div>
+`;

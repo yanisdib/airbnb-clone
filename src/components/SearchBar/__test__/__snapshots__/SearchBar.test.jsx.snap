@@ -1,3 +1,67 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SearchBar component renders correctly without crashing 1`] = `ReactWrapper {}`;
+exports[`SearchBar component renders correctly without crashing 1`] = `
+<SearchBar
+  setCheckInDate={[MockFunction]}
+  setCheckOutDate={[MockFunction]}
+  setGuests={[MockFunction]}
+  setLocation={[MockFunction]}
+>
+  <styled.div>
+    <div
+      className="sc-bdvvtL jFwTPG"
+    >
+      <styled.div>
+        <div
+          className="sc-gsDKAQ byLrgd"
+        >
+          <styled.div>
+            <div
+              className="sc-dkPtRN vQXyC"
+            >
+              <styled.div>
+                <div
+                  className="sc-hKwDye fkLfhi"
+                >
+                  <styled.input
+                    onChange={[MockFunction]}
+                  >
+                    <input
+                      className="sc-eCImPb"
+                      onChange={[MockFunction]}
+                    />
+                  </styled.input>
+                  <styled.input
+                    onChange={[MockFunction]}
+                  >
+                    <input
+                      className="sc-jRQBWg"
+                      onChange={[MockFunction]}
+                    />
+                  </styled.input>
+                  <styled.input
+                    onChange={[MockFunction]}
+                  >
+                    <input
+                      className="sc-gKclnd"
+                      onChange={[MockFunction]}
+                    />
+                  </styled.input>
+                  <styled.input
+                    onChange={[MockFunction]}
+                  >
+                    <input
+                      className="sc-iCfMLu"
+                      onChange={[MockFunction]}
+                    />
+                  </styled.input>
+                </div>
+              </styled.div>
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</SearchBar>
+`;
