@@ -1,4 +1,4 @@
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 
 import SearchBar from '../SearchBar';
 
@@ -12,7 +12,7 @@ describe('SearchBar component', () => {
 
 
     beforeEach(() => {
-        wrapper = shallow(
+        wrapper = mount(
             <SearchBar
                 setLocation={setLocationMock}
                 setCheckInDate={setCheckInDateMock}
@@ -22,26 +22,45 @@ describe('SearchBar component', () => {
         );
     })
 
+    afterEach(() => {
+        setLocationMock.mockClear()
+        setCheckInDateMock.mockClear()
+        setCheckOutDateMock.mockClear()
+        setGuestsMock.mockClear()
+    })
+
 
     it('renders correctly without crashing', () => expect(wrapper).toMatchSnapshot())
 
     it('calls setLocation props', () => {
-        wrapper.find('input').simulate('change', event)
-        expect(setLocationMock).toHaveBeenCalled()
+        const value = 'France';
+
+        wrapper.find('input').at(0).simulate('change', { target: { value } })
+
+        expect(setLocationMock).toHaveBeenCalledWith(expect.objectContaining({ target: { value } }))
     })
 
     it('calls setCheckIn props', () => {
-        wrapper.find('input').simulate('change', event)
-        expect(setCheckInDateMock).toHaveBeenCalled()
+        const value = '456378';
+
+        wrapper.find('input').at(1).simulate('change', { target: { value } })
+
+        expect(setCheckInDateMock).toHaveBeenCalledWith(expect.objectContaining({ target: { value } }))
     })
 
     it('calls setCheckOut props', () => {
-        wrapper.find('input').simulate('change', event)
-        expect(setCheckOutDateMock).toHaveBeenCalled()
+        const value = '473894';
+
+        wrapper.find('input').at(2).simulate('change', { target: { value } })
+
+        expect(setCheckOutDateMock).toHaveBeenCalledWith(expect.objectContaining({ target: { value } }))
     })
 
     it('calls setGuests props', () => {
-        wrapper.find('input').simulate('change', event)
-        expect(setGuestsMock).toHaveBeenCalled()
+        const value = 'Hello world';
+
+        wrapper.find('input').at(3).simulate('change', { target: { value } })
+
+        expect(setGuestsMock).toHaveBeenCalledWith(expect.objectContaining({ target: { value } }))
     })
 })

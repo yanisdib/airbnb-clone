@@ -56,9 +56,9 @@ function SearchBar({ setLocation, setCheckInDate, setCheckOutDate, setGuests }) 
                 <Content>
                     <FormGroup>
                         <LocationField onChange={setLocation} />
-                        <CheckInDateField onChange={setLocation} />
-                        <CheckOutDateField onChange={setLocation} />
-                        <GuestsField onChange={setLocation} />
+                        <CheckInDateField onChange={setCheckInDate} />
+                        <CheckOutDateField onChange={setCheckOutDate} />
+                        <GuestsField onChange={setGuests} />
                     </FormGroup>
                 </Content>
             </Wrapper>
