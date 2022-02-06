@@ -2,7 +2,7 @@
 
 An Airbnb clone app using the RESTful APIs [Mashvisor](https://rapidapi.com/mashvisor-team/api/mashvisor/) and [Spott](https://rapidapi.com/mashvisor-team/api/spott/)
 
-UPDATE [25/01/2022]: Regarding the Mashvisor API, it may not be integrated due to fees at last
+UPDATE: Regarding the Mashvisor API, it may not be integrated due to usage fees. Thinking of an alternative right now.
 
 
 ### STACK
