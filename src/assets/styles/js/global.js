@@ -13,6 +13,10 @@ export default createGlobalStyle`
     }
 
     :root {
+        /** FONTS */
+
+        --ui-brand-font: "Poppins", sans-serif;
+
         /** COLORS */
         --brand-color: #FF385C;
         --ui-brand-color: #000000; 
@@ -32,14 +36,14 @@ export default createGlobalStyle`
     body {
         background: ${({ theme }) => theme.body};
         color: ${({ theme }) => theme.text};
-        font-family: "Poppins", sans-serif;
+        font-family: var(--ui-brand-font);
         font-weight: 300;
         -webkit-font-smoothing: antialiased;
         transition: background color 0.25s linear;
     }
 
     button {
-        font-family: inherit;
+        font-family: var(--ui-brand-font);
         color: ${({ theme }) => theme.text};
     }
 `;
