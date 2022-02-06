@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
+
 import { Language } from '@styled-icons/material';
+
+import useAutocompletedCities from '../../hooks/useAutocompletedCities';
+import useFormField from '../../hooks/useFormField';
 
 import { Container, MenuButton, MenuDropdown, SearchBar } from '..';
 
@@ -20,7 +24,7 @@ const StyledHeader = styled.header`
     margin: 0 auto;
     left: 0;
     right: 0;
-    transition: all 200ms ease-in-out;
+    transition: all 300ms ease-in-out;
 `;
 
 const Wrapper = styled.div`
@@ -136,23 +140,26 @@ const UserNav = styled.div`
 
 
 function Header() {
+    const [searchedLocation, setSearchedLocation] = useFormField('');
+
     const [isMenuDropdownDisplayed, setIsMenuDropdownDisplayed] = useState(false);
     const [isWindowScrolled, setIsWindowScrolled] = useState(false);
     const [logo, setLogo] = useState(whiteLogo);
 
+    const autocompletedCities = useAutocompletedCities(searchedLocation);
+
     const changeHeaderOnScroll = () => {
         if (window.scrollY > 5) {
             setIsWindowScrolled(true)
-            setLogo(originalLogo)
+            setTimeout(() => setLogo(originalLogo), 100)
         }
         else {
-            setLogo(whiteLogo)
             setIsWindowScrolled(false)
+            setTimeout(() => setLogo(whiteLogo), 100)
         }
     }
 
     useEffect(() => window.addEventListener('scroll', changeHeaderOnScroll), [])
-
 
     return (
         <StyledHeader isWindowScrolled={isWindowScrolled}>
@@ -176,7 +183,7 @@ function Header() {
                                             <SearchTab>Experiences</SearchTab>
                                             <SearchTab>Online Experiences</SearchTab>
                                         </SearchTabsGroup>
-                                        <SearchBar />
+                                        <SearchBar setLocation={setSearchedLocation} />
                                     </>
                                 )
                             }
