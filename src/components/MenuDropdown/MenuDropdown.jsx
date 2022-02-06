@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 `;
 
 const AuthLinkList = styled.ul`
-    padding: 7px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #DFDFDF;
 
     a {
@@ -29,7 +29,7 @@ const AuthLinkList = styled.ul`
 `;
 
 const PublicLinkList = styled.ul`
-    padding: 7px 0;
+    padding: 10px 0;
 
     a {
         display: flex;
@@ -49,7 +49,7 @@ const PublicLinkList = styled.ul`
 
 function MenuDropdown() {
     return (
-        <Dropdown width={46}>
+        <Dropdown width={255}>
             <Wrapper>
                 <AuthLinkList>
                     <a href="/">Sign up</a>
