@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardGrid component renders correctly without crashing 1`] = `
+<styled.div>
+  <div
+    className="sc-bdvvtL jbohyQ"
+  />
+</styled.div>
+`;
