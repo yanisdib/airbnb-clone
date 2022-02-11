@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MenuDropdown component renders correctly without crashing 1`] = `
-<styled.div
-  width={46}
->
+<styled.div>
   <styled.div>
     <styled.ul>
       <a

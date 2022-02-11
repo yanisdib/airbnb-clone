@@ -49,7 +49,7 @@ const PublicLinkList = styled.ul`
 
 function MenuDropdown() {
     return (
-        <Dropdown width={255}>
+        <Dropdown>
             <Wrapper>
                 <AuthLinkList>
                     <a href="/">Sign up</a>
