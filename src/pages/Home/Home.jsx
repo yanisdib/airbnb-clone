@@ -1,8 +1,13 @@
-import { Hero } from '../../components';
+import { Hero, TripSuggestion } from '../../components';
 
 
 function Home() {
-  return <Hero></Hero>;
+  return (
+    <>
+      <Hero />
+      <TripSuggestion />
+    </>
+  );
 }
 
 
