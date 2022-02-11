@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBarButton component should render correctly without crashing 1`] = `
+<button
+  className="sc-bdvvtL eCRPxH"
+>
+  Search
+</button>
+`;
