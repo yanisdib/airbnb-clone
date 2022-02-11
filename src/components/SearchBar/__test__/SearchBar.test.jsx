@@ -6,27 +6,27 @@ import SearchBar from '../SearchBar';
 describe('SearchBar component', () => {
     let wrapper;
     const setLocationMock = jest.fn();
-    const setCheckInDateMock = jest.fn();
-    const setCheckOutDateMock = jest.fn();
-    const setGuestsMock = jest.fn();
+    const displayCheckInDateDropdownMock = jest.fn();
+    const displayCheckOutDateDropdownMock = jest.fn();
+    const displayGuestsDropdownMock = jest.fn();
 
 
     beforeEach(() => {
         wrapper = mount(
             <SearchBar
                 setLocation={setLocationMock}
-                setCheckInDate={setCheckInDateMock}
-                setCheckOutDate={setCheckOutDateMock}
-                setGuests={setGuestsMock}
+                displayCheckInDateDropdown={displayCheckInDateDropdownMock}
+                displayCheckOutDateDropdown={displayCheckOutDateDropdownMock}
+                displayGuestsDropdown={displayGuestsDropdownMock}
             />
         );
     })
 
     afterEach(() => {
         setLocationMock.mockClear()
-        setCheckInDateMock.mockClear()
-        setCheckOutDateMock.mockClear()
-        setGuestsMock.mockClear()
+        displayCheckInDateDropdownMock.mockClear()
+        displayCheckOutDateDropdownMock.mockClear()
+        displayGuestsDropdownMock.mockClear()
     })
 
 
@@ -37,30 +37,24 @@ describe('SearchBar component', () => {
 
         wrapper.find('input').at(0).simulate('change', { target: { value } })
 
-        expect(setLocationMock).toHaveBeenCalledWith(expect.objectContaining({ target: { value } }))
+        expect(setLocationMock).toHaveBeenCalled()
     })
 
     it('calls setCheckIn props', () => {
-        const value = '456378';
+        wrapper.find('div#checkInDate').simulate('click')
 
-        wrapper.find('input').at(1).simulate('change', { target: { value } })
-
-        expect(setCheckInDateMock).toHaveBeenCalledWith(expect.objectContaining({ target: { value } }))
+        expect(displayCheckInDateDropdownMock).toHaveBeenCalled()
     })
 
     it('calls setCheckOut props', () => {
-        const value = '473894';
+        wrapper.find('div#checkOutDate').simulate('click')
 
-        wrapper.find('input').at(2).simulate('change', { target: { value } })
-
-        expect(setCheckOutDateMock).toHaveBeenCalledWith(expect.objectContaining({ target: { value } }))
+        expect(displayCheckOutDateDropdownMock).toHaveBeenCalled()
     })
 
     it('calls setGuests props', () => {
-        const value = 'Hello world';
+        wrapper.find('div#guests').simulate('click')
 
-        wrapper.find('input').at(3).simulate('change', { target: { value } })
-
-        expect(setGuestsMock).toHaveBeenCalledWith(expect.objectContaining({ target: { value } }))
+        expect(displayGuestsDropdownMock).toHaveBeenCalled()
     })
 })

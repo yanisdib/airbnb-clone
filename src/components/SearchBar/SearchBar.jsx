@@ -1,5 +1,7 @@
+import { Search } from '@styled-icons/material';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { SearchBarButton } from '..';
 
 
 const Bar = styled.div`
@@ -15,11 +17,13 @@ const Bar = styled.div`
 
 const Wrapper = styled.div`
     display: flex;
+    width: inherit;
     height: inherit;
 `;
 
 const Content = styled.div`
     display: flex;
+    flex: 1 1 0%;
     align-items: center;
     height: inherit;
     background-color: var(--big-search-form-background);
@@ -28,13 +32,14 @@ const Content = styled.div`
 
 const FormGroup = styled.div`
     display: flex;
+    flex: 1;
 `;
 
 
 const FormControl = styled.div`
     display: flex;
     flex-direction: column;
-    flex: 3 0 0%;
+    flex: 1 0 0%;
     position: relative;
     padding: 14px 24px;
     cursor: pointer;
@@ -65,8 +70,8 @@ const FormControl = styled.div`
         }
 
     label {
-        font-size: 12px;
-        font-weight: 500;
+        font-size: 11.5px;
+        font-weight: 600;
         line-height: 16px !important;
         letter-spacing: 0.04em !important;
         padding-bottom: 2px !important;
@@ -84,7 +89,7 @@ const FormControl = styled.div`
 
         &::placeholder {
             font-family: var(--ui-brand-font);
-            font-size: 14px;
+            font-size: 13.5px;
             font-weight: 400;
             line-height: 18px;
             text-overflow: ellipsis;
@@ -103,38 +108,32 @@ const FormControlSeparator = styled.div`
 
 const LocationField = styled.input``;
 
-const CheckInDateField = styled.div`
-    color: #767676;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    text-overflow: ellipsis;    line-height: 18px;
-    text-overflow: ellipsis;
-    cursor: pointer;
+const FieldButton = styled.div`
+color: #767676;
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+text-overflow: ellipsis;    
+cursor: pointer;
 `;
 
-const CheckOutDateField = styled.div`
-    color: #767676;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    text-overflow: ellipsis;    line-height: 18px;
-    text-overflow: ellipsis;
-    cursor: pointer;
-`;
+const CheckInDateField = styled(FieldButton)``;
 
-const GuestsField = styled.div`
-    color: #767676;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    text-overflow: ellipsis;    line-height: 18px;
-    text-overflow: ellipsis;
-    cursor: pointer;
+const CheckOutDateField = styled(FieldButton)``;
+
+const GuestsField = styled(FieldButton)``;
+
+const SearchFormButton = styled.div`
+    flex: 0 0 auto;
+    align-self: center;
+    margin-left: -6px;
+    padding-right: 9px;
+    position: relative;
+    z-index: 5;
 `;
 
 
-function SearchBar({ setLocation, setCheckInDate, setCheckOutDate, setGuests }) {
+function SearchBar({ displayCheckInDateDropdown, displayCheckOutDateDropdown, displayGuestsDropdown, setLocation }) {
     return (
         <Bar>
             <Wrapper>
@@ -147,28 +146,33 @@ function SearchBar({ setLocation, setCheckInDate, setCheckOutDate, setGuests }) 
                         <FormControlSeparator />
                     </FormGroup>
                     <FormGroup>
-                        <FormControl>
+                        <FormControl role="button" id="checkInDate" onClick={displayCheckInDateDropdown}>
                             <label>Check in</label>
-                            <CheckInDateField placeholder='Add dates' onChange={setCheckInDate}>
+                            <CheckInDateField>
                                 Add dates
                             </CheckInDateField>
                         </FormControl>
                         <FormControlSeparator />
-                        <FormControl>
+                        <FormControl role="button" id="checkOutDate" onClick={displayCheckOutDateDropdown}>
                             <label>Check out</label>
-                            <CheckOutDateField placeholder='Add dates' onChange={setCheckOutDate}>
+                            <CheckOutDateField>
                                 Add dates
                             </CheckOutDateField>
                         </FormControl>
                         <FormControlSeparator />
                     </FormGroup>
                     <FormGroup>
-                        <FormControl>
+                        <FormControl role="button" id="guests" onClick={displayGuestsDropdown}>
                             <label>Guests</label>
-                            <GuestsField placeholder='Add guests' onChange={setGuests}>
+                            <GuestsField>
                                 Add guests
                             </GuestsField>
                         </FormControl>
+                        <SearchFormButton>
+                            <SearchBarButton>
+                                <Search />
+                            </SearchBarButton>
+                        </SearchFormButton>
                     </FormGroup>
                 </Content>
             </Wrapper>
@@ -178,17 +182,17 @@ function SearchBar({ setLocation, setCheckInDate, setCheckOutDate, setGuests }) 
 
 
 SearchBar.defaultProps = {
-    setLocation: () => { },
     setCheckInDate: () => { },
     setCheckOutDate: () => { },
-    setGuests: () => { }
+    setGuests: () => { },
+    setLocation: () => { }
 };
 
 SearchBar.propTypes = {
-    setLocation: PropTypes.func.isRequired,
     setCheckInDate: PropTypes.func.isRequired,
     setCheckOutDate: PropTypes.func.isRequired,
-    setGuests: PropTypes.func.isRequired
+    setGuests: PropTypes.func.isRequired,
+    setLocation: PropTypes.func.isRequired
 };
 
 

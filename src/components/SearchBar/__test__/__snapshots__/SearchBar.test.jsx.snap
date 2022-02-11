@@ -2,59 +2,198 @@
 
 exports[`SearchBar component renders correctly without crashing 1`] = `
 <SearchBar
-  setCheckInDate={[MockFunction]}
-  setCheckOutDate={[MockFunction]}
-  setGuests={[MockFunction]}
+  displayCheckInDateDropdown={[MockFunction]}
+  displayCheckOutDateDropdown={[MockFunction]}
+  displayGuestsDropdown={[MockFunction]}
+  setCheckInDate={[Function]}
+  setCheckOutDate={[Function]}
+  setGuests={[Function]}
   setLocation={[MockFunction]}
 >
   <styled.div>
     <div
-      className="sc-bdvvtL jFwTPG"
+      className="sc-giYglK hxUaJr"
     >
       <styled.div>
         <div
-          className="sc-gsDKAQ byLrgd"
+          className="sc-ezbkAF aGrgX"
         >
           <styled.div>
             <div
-              className="sc-dkPtRN vQXyC"
+              className="sc-bYoBSM hyJFQK"
             >
               <styled.div>
                 <div
-                  className="sc-hKwDye fkLfhi"
+                  className="sc-kLwhqv dRTrnp"
                 >
-                  <styled.input
-                    onChange={[MockFunction]}
-                  >
-                    <input
-                      className="sc-eCImPb"
-                      onChange={[MockFunction]}
+                  <styled.div>
+                    <div
+                      className="sc-ikJyIC jiFSBM"
+                    >
+                      <label>
+                        Location
+                      </label>
+                      <styled.input
+                        onChange={[MockFunction]}
+                        placeholder="Where are you going?"
+                      >
+                        <input
+                          className="sc-hiCibw"
+                          onChange={[MockFunction]}
+                          placeholder="Where are you going?"
+                        />
+                      </styled.input>
+                    </div>
+                  </styled.div>
+                  <styled.div>
+                    <div
+                      className="sc-jJoQJp ieuqeZ"
                     />
-                  </styled.input>
-                  <styled.input
-                    onChange={[MockFunction]}
+                  </styled.div>
+                </div>
+              </styled.div>
+              <styled.div>
+                <div
+                  className="sc-kLwhqv dRTrnp"
+                >
+                  <styled.div
+                    id="checkInDate"
+                    onClick={[MockFunction]}
+                    role="button"
                   >
-                    <input
-                      className="sc-jRQBWg"
-                      onChange={[MockFunction]}
+                    <div
+                      className="sc-ikJyIC jiFSBM"
+                      id="checkInDate"
+                      onClick={[MockFunction]}
+                      role="button"
+                    >
+                      <label>
+                        Check in
+                      </label>
+                      <Styled(styled.div)>
+                        <div
+                          className="sc-gWXbKe sc-cCcXHH bDsznr"
+                        >
+                          Add dates
+                        </div>
+                      </Styled(styled.div)>
+                    </div>
+                  </styled.div>
+                  <styled.div>
+                    <div
+                      className="sc-jJoQJp ieuqeZ"
                     />
-                  </styled.input>
-                  <styled.input
-                    onChange={[MockFunction]}
+                  </styled.div>
+                  <styled.div
+                    id="checkOutDate"
+                    onClick={[MockFunction]}
+                    role="button"
                   >
-                    <input
-                      className="sc-gKclnd"
-                      onChange={[MockFunction]}
+                    <div
+                      className="sc-ikJyIC jiFSBM"
+                      id="checkOutDate"
+                      onClick={[MockFunction]}
+                      role="button"
+                    >
+                      <label>
+                        Check out
+                      </label>
+                      <Styled(styled.div)>
+                        <div
+                          className="sc-gWXbKe sc-cidDSM bDsznr"
+                        >
+                          Add dates
+                        </div>
+                      </Styled(styled.div)>
+                    </div>
+                  </styled.div>
+                  <styled.div>
+                    <div
+                      className="sc-jJoQJp ieuqeZ"
                     />
-                  </styled.input>
-                  <styled.input
-                    onChange={[MockFunction]}
+                  </styled.div>
+                </div>
+              </styled.div>
+              <styled.div>
+                <div
+                  className="sc-kLwhqv dRTrnp"
+                >
+                  <styled.div
+                    id="guests"
+                    onClick={[MockFunction]}
+                    role="button"
                   >
-                    <input
-                      className="sc-iCfMLu"
-                      onChange={[MockFunction]}
-                    />
-                  </styled.input>
+                    <div
+                      className="sc-ikJyIC jiFSBM"
+                      id="guests"
+                      onClick={[MockFunction]}
+                      role="button"
+                    >
+                      <label>
+                        Guests
+                      </label>
+                      <Styled(styled.div)>
+                        <div
+                          className="sc-gWXbKe sc-jcFjpl bDsznr"
+                        >
+                          Add guests
+                        </div>
+                      </Styled(styled.div)>
+                    </div>
+                  </styled.div>
+                  <styled.div>
+                    <div
+                      className="sc-caiLqq hlDqpS"
+                    >
+                      <styled.button>
+                        <button
+                          className="sc-hKwDye bfryip"
+                        >
+                          <Search>
+                            <StyledIconBase
+                              iconAttrs={
+                                Object {
+                                  "fill": "currentColor",
+                                  "xmlns": "http://www.w3.org/2000/svg",
+                                }
+                              }
+                              iconVerticalAlign="middle"
+                              iconViewBox="0 0 24 24"
+                            >
+                              <ForwardRef
+                                className="StyledIconBase-ea9ulj-0 bsimgx"
+                                iconAttrs={
+                                  Object {
+                                    "fill": "currentColor",
+                                    "xmlns": "http://www.w3.org/2000/svg",
+                                  }
+                                }
+                                iconVerticalAlign="middle"
+                                iconViewBox="0 0 24 24"
+                              >
+                                <svg
+                                  aria-hidden="true"
+                                  className="StyledIconBase-ea9ulj-0 bsimgx"
+                                  fill="currentColor"
+                                  focusable="false"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path
+                                    d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                                  />
+                                </svg>
+                              </ForwardRef>
+                            </StyledIconBase>
+                          </Search>
+                        </button>
+                      </styled.button>
+                    </div>
+                  </styled.div>
                 </div>
               </styled.div>
             </div>
