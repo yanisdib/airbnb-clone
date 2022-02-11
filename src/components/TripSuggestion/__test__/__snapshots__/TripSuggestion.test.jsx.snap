@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TripSuggestion component renders correctly without crashing 1`] = `
+<TripSuggestion>
+  <styled.div>
+    <div
+      className="sc-hiCibw iEfkOY"
+    >
+      <styled.div>
+        <div
+          className="sc-gWXbKe kdYpXr"
+        >
+          <styled.div>
+            <div
+              className="sc-bdvvtL fNgVow"
+            >
+              <styled.div>
+                <div
+                  className="sc-cCcXHH jVHuEs"
+                >
+                  <styled.div>
+                    <div
+                      className="sc-dkPtRN hAabEl"
+                    >
+                      <styled.div
+                        key="108fe6b2-4b94-475f-819f-49456c1d72ee"
+                      >
+                        <div
+                          className="sc-cidDSM ccYUdR"
+                        >
+                          <styled.h2>
+                            <h2
+                              className="sc-jcFjpl eGLXzA"
+                            >
+                              Barcelonette
+                            </h2>
+                          </styled.h2>
+                          <styled.span>
+                            <span
+                              className="sc-caiLqq fJBMEl"
+                            >
+                              152
+                               kilometers away
+                            </span>
+                          </styled.span>
+                        </div>
+                      </styled.div>
+                      <styled.div
+                        key="e18b1796-fc70-4fe4-b80d-535df288fe39"
+                      >
+                        <div
+                          className="sc-cidDSM ccYUdR"
+                        >
+                          <styled.h2>
+                            <h2
+                              className="sc-jcFjpl eGLXzA"
+                            >
+                              Vars
+                            </h2>
+                          </styled.h2>
+                          <styled.span>
+                            <span
+                              className="sc-caiLqq fJBMEl"
+                            >
+                              172
+                               kilometers away
+                            </span>
+                          </styled.span>
+                        </div>
+                      </styled.div>
+                      <styled.div
+                        key="8a1b6da7-34c1-436c-840d-526cd5674f67"
+                      >
+                        <div
+                          className="sc-cidDSM ccYUdR"
+                        >
+                          <styled.h2>
+                            <h2
+                              className="sc-jcFjpl eGLXzA"
+                            >
+                              Allos
+                            </h2>
+                          </styled.h2>
+                          <styled.span>
+                            <span
+                              className="sc-caiLqq fJBMEl"
+                            >
+                              136
+                               kilometers away
+                            </span>
+                          </styled.span>
+                        </div>
+                      </styled.div>
+                      <styled.div
+                        key="27ba79b8-bfb2-42bf-af8d-826e2443fa42"
+                      >
+                        <div
+                          className="sc-cidDSM ccYUdR"
+                        >
+                          <styled.h2>
+                            <h2
+                              className="sc-jcFjpl eGLXzA"
+                            >
+                              Porto Vecchio
+                            </h2>
+                          </styled.h2>
+                          <styled.span>
+                            <span
+                              className="sc-caiLqq fJBMEl"
+                            >
+                              323
+                               kilometers away
+                            </span>
+                          </styled.span>
+                        </div>
+                      </styled.div>
+                    </div>
+                  </styled.div>
+                </div>
+              </styled.div>
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</TripSuggestion>
+`;
