@@ -1,59 +1,468 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header component renders correctly without crashing 1`] = `
-<styled.header
-  isWindowScrolled={false}
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
 >
-  <styled.div>
-    <styled.div>
-      <styled.div>
+  <Header>
+    <styled.header
+      isWindowScrolled={false}
+    >
+      <header
+        className="sc-ikJyIC juDsRi"
+      >
         <styled.div>
-          <iframe
-            height={80}
-            src="logo-original-w.svg"
-            width={102}
+          <div
+            className="sc-jJoQJp hmNxcQ"
           >
-            <img
-              height={80}
-              src="logo-original-w.svg"
-              width={102}
-            />
-          </iframe>
-        </styled.div>
-        <styled.form>
-          <styled.div>
-            <styled.div
-              isSearchTabActive={true}
-            >
-              Places to stay
-            </styled.div>
             <styled.div>
-              Experiences
+              <div
+                className="sc-bdvvtL fNgVow"
+              >
+                <styled.div>
+                  <div
+                    className="sc-hiCibw jSfIfU"
+                  >
+                    <styled.div>
+                      <div
+                        className="sc-gWXbKe dJCqhj"
+                      >
+                        <iframe
+                          height={80}
+                          src="logo-original-w.svg"
+                          width={102}
+                        >
+                          <img
+                            height={80}
+                            src="logo-original-w.svg"
+                            width={102}
+                          />
+                        </iframe>
+                      </div>
+                    </styled.div>
+                    <styled.form>
+                      <form
+                        className="sc-cCcXHH fGmsdf"
+                      >
+                        <styled.div>
+                          <div
+                            className="sc-cidDSM suFON"
+                          >
+                            <styled.div
+                              isSearchTabActive={true}
+                            >
+                              <div
+                                className="sc-jcFjpl aKKQk"
+                              >
+                                Places to stay
+                              </div>
+                            </styled.div>
+                            <styled.div>
+                              <div
+                                className="sc-jcFjpl bwapvn"
+                              >
+                                Experiences
+                              </div>
+                            </styled.div>
+                            <styled.div>
+                              <div
+                                className="sc-jcFjpl bwapvn"
+                              >
+                                Online Experiences
+                              </div>
+                            </styled.div>
+                          </div>
+                        </styled.div>
+                        <SearchBar
+                          displayCheckInDateDropdown={[Function]}
+                          displayCheckOutDateDropdown={[Function]}
+                          displayGuestsDropdown={[Function]}
+                          setCheckInDate={[Function]}
+                          setCheckOutDate={[Function]}
+                          setGuests={[Function]}
+                          setLocation={[Function]}
+                        >
+                          <styled.div>
+                            <div
+                              className="sc-hKwDye fttIFk"
+                            >
+                              <styled.div>
+                                <div
+                                  className="sc-eCImPb gzpvSy"
+                                >
+                                  <styled.div>
+                                    <div
+                                      className="sc-jRQBWg fhNyBZ"
+                                    >
+                                      <styled.div>
+                                        <div
+                                          className="sc-gKclnd flvkWv"
+                                        >
+                                          <styled.div>
+                                            <div
+                                              className="sc-iCfMLu tVjpf"
+                                            >
+                                              <label>
+                                                Location
+                                              </label>
+                                              <styled.input
+                                                onChange={[Function]}
+                                                placeholder="Where are you going?"
+                                              >
+                                                <input
+                                                  className="sc-pVTFL"
+                                                  onChange={[Function]}
+                                                  placeholder="Where are you going?"
+                                                />
+                                              </styled.input>
+                                            </div>
+                                          </styled.div>
+                                          <styled.div>
+                                            <div
+                                              className="sc-furwcr hCuxfS"
+                                            />
+                                          </styled.div>
+                                        </div>
+                                      </styled.div>
+                                      <styled.div>
+                                        <div
+                                          className="sc-gKclnd flvkWv"
+                                        >
+                                          <styled.div
+                                            id="checkInDate"
+                                            onClick={[Function]}
+                                            role="button"
+                                          >
+                                            <div
+                                              className="sc-iCfMLu tVjpf"
+                                              id="checkInDate"
+                                              onClick={[Function]}
+                                              role="button"
+                                            >
+                                              <label>
+                                                Check in
+                                              </label>
+                                              <Styled(styled.div)>
+                                                <div
+                                                  className="sc-jrQzAO sc-kDTinF dvDGoe"
+                                                >
+                                                  Add dates
+                                                </div>
+                                              </Styled(styled.div)>
+                                            </div>
+                                          </styled.div>
+                                          <styled.div>
+                                            <div
+                                              className="sc-furwcr hCuxfS"
+                                            />
+                                          </styled.div>
+                                          <styled.div
+                                            id="checkOutDate"
+                                            onClick={[Function]}
+                                            role="button"
+                                          >
+                                            <div
+                                              className="sc-iCfMLu tVjpf"
+                                              id="checkOutDate"
+                                              onClick={[Function]}
+                                              role="button"
+                                            >
+                                              <label>
+                                                Check out
+                                              </label>
+                                              <Styled(styled.div)>
+                                                <div
+                                                  className="sc-jrQzAO sc-iqseJM dvDGoe"
+                                                >
+                                                  Add dates
+                                                </div>
+                                              </Styled(styled.div)>
+                                            </div>
+                                          </styled.div>
+                                          <styled.div>
+                                            <div
+                                              className="sc-furwcr hCuxfS"
+                                            />
+                                          </styled.div>
+                                        </div>
+                                      </styled.div>
+                                      <styled.div>
+                                        <div
+                                          className="sc-gKclnd flvkWv"
+                                        >
+                                          <styled.div
+                                            id="guests"
+                                            onClick={[Function]}
+                                            role="button"
+                                          >
+                                            <div
+                                              className="sc-iCfMLu tVjpf"
+                                              id="guests"
+                                              onClick={[Function]}
+                                              role="button"
+                                            >
+                                              <label>
+                                                Guests
+                                              </label>
+                                              <Styled(styled.div)>
+                                                <div
+                                                  className="sc-jrQzAO sc-crHmcD dvDGoe"
+                                                >
+                                                  Add guests
+                                                </div>
+                                              </Styled(styled.div)>
+                                            </div>
+                                          </styled.div>
+                                          <styled.div>
+                                            <div
+                                              className="sc-egiyK lcFibs"
+                                            >
+                                              <styled.button>
+                                                <button
+                                                  className="sc-bqiRlB fjIBIT"
+                                                >
+                                                  <Search>
+                                                    <StyledIconBase
+                                                      iconAttrs={
+                                                        Object {
+                                                          "fill": "currentColor",
+                                                          "xmlns": "http://www.w3.org/2000/svg",
+                                                        }
+                                                      }
+                                                      iconVerticalAlign="middle"
+                                                      iconViewBox="0 0 24 24"
+                                                    >
+                                                      <ForwardRef
+                                                        className="StyledIconBase-ea9ulj-0 bsimgx"
+                                                        iconAttrs={
+                                                          Object {
+                                                            "fill": "currentColor",
+                                                            "xmlns": "http://www.w3.org/2000/svg",
+                                                          }
+                                                        }
+                                                        iconVerticalAlign="middle"
+                                                        iconViewBox="0 0 24 24"
+                                                      >
+                                                        <svg
+                                                          aria-hidden="true"
+                                                          className="StyledIconBase-ea9ulj-0 bsimgx"
+                                                          fill="currentColor"
+                                                          focusable="false"
+                                                          viewBox="0 0 24 24"
+                                                          xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                          <path
+                                                            d="M0 0h24v24H0z"
+                                                            fill="none"
+                                                          />
+                                                          <path
+                                                            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                                                          />
+                                                        </svg>
+                                                      </ForwardRef>
+                                                    </StyledIconBase>
+                                                  </Search>
+                                                </button>
+                                              </styled.button>
+                                            </div>
+                                          </styled.div>
+                                        </div>
+                                      </styled.div>
+                                    </div>
+                                  </styled.div>
+                                </div>
+                              </styled.div>
+                            </div>
+                          </styled.div>
+                        </SearchBar>
+                      </form>
+                    </styled.form>
+                    <styled.div>
+                      <div
+                        className="sc-caiLqq guOQvO"
+                      >
+                        <button>
+                          Become a Host
+                        </button>
+                        <button>
+                          <Language>
+                            <StyledIconBase
+                              iconAttrs={
+                                Object {
+                                  "fill": "currentColor",
+                                  "xmlns": "http://www.w3.org/2000/svg",
+                                }
+                              }
+                              iconVerticalAlign="middle"
+                              iconViewBox="0 0 24 24"
+                            >
+                              <ForwardRef
+                                className="StyledIconBase-ea9ulj-0 bsimgx"
+                                iconAttrs={
+                                  Object {
+                                    "fill": "currentColor",
+                                    "xmlns": "http://www.w3.org/2000/svg",
+                                  }
+                                }
+                                iconVerticalAlign="middle"
+                                iconViewBox="0 0 24 24"
+                              >
+                                <svg
+                                  aria-hidden="true"
+                                  className="StyledIconBase-ea9ulj-0 bsimgx"
+                                  fill="currentColor"
+                                  focusable="false"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path
+                                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95a15.65 15.65 0 00-1.38-3.56A8.03 8.03 0 0118.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.987 7.987 0 015.08 16zm2.95-8H5.08a7.987 7.987 0 014.33-3.56A15.65 15.65 0 008.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 01-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"
+                                  />
+                                </svg>
+                              </ForwardRef>
+                            </StyledIconBase>
+                          </Language>
+                        </button>
+                        <MenuButton
+                          onClick={[Function]}
+                        >
+                          <styled.div>
+                            <div
+                              className="sc-ksdxgE FANRq"
+                            >
+                              <styled.button
+                                onClick={[Function]}
+                              >
+                                <button
+                                  className="sc-hBUSln jnntuF"
+                                  onClick={[Function]}
+                                >
+                                  <Styled(Menu)>
+                                    <Menu
+                                      className="sc-bkkeKt kVHIMK"
+                                    >
+                                      <StyledIconBase
+                                        className="sc-bkkeKt kVHIMK"
+                                        iconAttrs={
+                                          Object {
+                                            "fill": "currentColor",
+                                            "xmlns": "http://www.w3.org/2000/svg",
+                                          }
+                                        }
+                                        iconVerticalAlign="middle"
+                                        iconViewBox="0 0 24 24"
+                                      >
+                                        <ForwardRef
+                                          className="StyledIconBase-ea9ulj-0 bsimgx sc-bkkeKt kVHIMK"
+                                          iconAttrs={
+                                            Object {
+                                              "fill": "currentColor",
+                                              "xmlns": "http://www.w3.org/2000/svg",
+                                            }
+                                          }
+                                          iconVerticalAlign="middle"
+                                          iconViewBox="0 0 24 24"
+                                        >
+                                          <svg
+                                            aria-hidden="true"
+                                            className="StyledIconBase-ea9ulj-0 bsimgx sc-bkkeKt kVHIMK"
+                                            fill="currentColor"
+                                            focusable="false"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <path
+                                              d="M0 0h24v24H0z"
+                                              fill="none"
+                                            />
+                                            <path
+                                              d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+                                            />
+                                          </svg>
+                                        </ForwardRef>
+                                      </StyledIconBase>
+                                    </Menu>
+                                  </Styled(Menu)>
+                                  <styled.div>
+                                    <div
+                                      className="sc-fotOHu fOvtEr"
+                                    >
+                                      <Styled(AccountCircle)>
+                                        <AccountCircle
+                                          className="sc-fFeiMQ hZAAEL"
+                                        >
+                                          <StyledIconBase
+                                            className="sc-fFeiMQ hZAAEL"
+                                            iconAttrs={
+                                              Object {
+                                                "fill": "currentColor",
+                                                "xmlns": "http://www.w3.org/2000/svg",
+                                              }
+                                            }
+                                            iconVerticalAlign="middle"
+                                            iconViewBox="0 0 24 24"
+                                          >
+                                            <ForwardRef
+                                              className="StyledIconBase-ea9ulj-0 bsimgx sc-fFeiMQ hZAAEL"
+                                              iconAttrs={
+                                                Object {
+                                                  "fill": "currentColor",
+                                                  "xmlns": "http://www.w3.org/2000/svg",
+                                                }
+                                              }
+                                              iconVerticalAlign="middle"
+                                              iconViewBox="0 0 24 24"
+                                            >
+                                              <svg
+                                                aria-hidden="true"
+                                                className="StyledIconBase-ea9ulj-0 bsimgx sc-fFeiMQ hZAAEL"
+                                                fill="currentColor"
+                                                focusable="false"
+                                                viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <path
+                                                  d="M0 0h24v24H0z"
+                                                  fill="none"
+                                                />
+                                                <path
+                                                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2a7.2 7.2 0 01-6-3.22c.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08a7.2 7.2 0 01-6 3.22z"
+                                                />
+                                              </svg>
+                                            </ForwardRef>
+                                          </StyledIconBase>
+                                        </AccountCircle>
+                                      </Styled(AccountCircle)>
+                                    </div>
+                                  </styled.div>
+                                </button>
+                              </styled.button>
+                            </div>
+                          </styled.div>
+                        </MenuButton>
+                      </div>
+                    </styled.div>
+                  </div>
+                </styled.div>
+              </div>
             </styled.div>
-            <styled.div>
-              Online Experiences
-            </styled.div>
-          </styled.div>
-          <SearchBar
-            setCheckInDate={[Function]}
-            setCheckOutDate={[Function]}
-            setGuests={[Function]}
-            setLocation={[Function]}
-          />
-        </styled.form>
-        <styled.div>
-          <button>
-            Become a Host
-          </button>
-          <button>
-            <Language />
-          </button>
-          <MenuButton
-            onClick={[Function]}
-          />
+          </div>
         </styled.div>
-      </styled.div>
-    </styled.div>
-  </styled.div>
-</styled.header>
+      </header>
+    </styled.header>
+  </Header>
+</Provider>
 `;

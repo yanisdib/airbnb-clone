@@ -53,8 +53,12 @@ const SearchForm = styled.form`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     max-width: 850px;
-    margin: 0 auto !important;
+    margin: 0 auto;
 `;
 
 const SearchTabsGroup = styled.div`
@@ -105,7 +109,6 @@ const SearchTab = styled.div`
 
 const UserNav = styled.div`
     display: flex;
-    flex: 1 0 140px;
     position: relative;
     justify-content: flex-end;
     align-items: center;
@@ -143,6 +146,9 @@ function Header() {
     const [searchedLocation, setSearchedLocation] = useFormField('');
 
     const [isMenuDropdownDisplayed, setIsMenuDropdownDisplayed] = useState(false);
+    const [isCheckInDateDropdownDisplayed, setIsCheckInDateDropdownDisplayed] = useState(false);
+    const [isCheckOutDateDropdownDisplayed, setIsCheckOutDateDropdownDisplayed] = useState(false);
+    const [isGuestsDropdownDisplayed, setIsGuestsDropdownDisplayed] = useState(false);
     const [isWindowScrolled, setIsWindowScrolled] = useState(false);
     const [logo, setLogo] = useState(whiteLogo);
 
@@ -183,7 +189,12 @@ function Header() {
                                             <SearchTab>Experiences</SearchTab>
                                             <SearchTab>Online Experiences</SearchTab>
                                         </SearchTabsGroup>
-                                        <SearchBar setLocation={setSearchedLocation} />
+                                        <SearchBar
+                                            setLocation={setSearchedLocation}
+                                            displayCheckInDateDropdown={() => setIsCheckInDateDropdownDisplayed(prevState => !prevState)}
+                                            displayCheckOutDateDropdown={() => setIsCheckOutDateDropdownDisplayed(prevState => !prevState)}
+                                            displayGuestsDropdown={() => setIsGuestsDropdownDisplayed(prevState => !prevState)}
+                                        />
                                     </>
                                 )
                             }
