@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExperiencesSection component renders correctly without crashing 1`] = `
+<Experiencesection>
+  <styled.div>
+    <div
+      className="sc-iAKWXU eSxgFC"
+    >
+      <styled.div>
+        <div
+          className="sc-efQSVx inTfYM"
+        >
+          <styled.div>
+            <div
+              className="sc-cTAqQK fcyczy"
+            >
+              <styled.div>
+                <div
+                  className="sc-jObWnj bTVFgD"
+                >
+                  <styled.button>
+                    <button
+                      className="sc-gsDKAQ hHORsZ"
+                    />
+                  </styled.button>
+                </div>
+              </styled.div>
+              <styled.div>
+                <div
+                  className="sc-dPiLbb eokPAO"
+                >
+                  <styled.button>
+                    <button
+                      className="sc-gsDKAQ hHORsZ"
+                    />
+                  </styled.button>
+                </div>
+              </styled.div>
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</Experiencesection>
+`;
