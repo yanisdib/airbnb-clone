@@ -12,23 +12,23 @@ exports[`SearchBar component renders correctly without crashing 1`] = `
 >
   <styled.div>
     <div
-      className="sc-giYglK hxUaJr"
+      className="sc-hiCibw fBfzmK"
     >
       <styled.div>
         <div
-          className="sc-ezbkAF aGrgX"
+          className="sc-gWXbKe PFdta"
         >
           <styled.div>
             <div
-              className="sc-bYoBSM hyJFQK"
+              className="sc-cCcXHH eBzKOp"
             >
               <styled.div>
                 <div
-                  className="sc-kLwhqv dRTrnp"
+                  className="sc-cidDSM fWeKsa"
                 >
                   <styled.div>
                     <div
-                      className="sc-ikJyIC jiFSBM"
+                      className="sc-jcFjpl cNaMaa"
                     >
                       <label>
                         Location
@@ -38,7 +38,7 @@ exports[`SearchBar component renders correctly without crashing 1`] = `
                         placeholder="Where are you going?"
                       >
                         <input
-                          className="sc-hiCibw"
+                          className="sc-iUKqMP"
                           onChange={[MockFunction]}
                           placeholder="Where are you going?"
                         />
@@ -47,14 +47,14 @@ exports[`SearchBar component renders correctly without crashing 1`] = `
                   </styled.div>
                   <styled.div>
                     <div
-                      className="sc-jJoQJp ieuqeZ"
+                      className="sc-caiLqq bHYoXS"
                     />
                   </styled.div>
                 </div>
               </styled.div>
               <styled.div>
                 <div
-                  className="sc-kLwhqv dRTrnp"
+                  className="sc-cidDSM fWeKsa"
                 >
                   <styled.div
                     id="checkInDate"
@@ -62,7 +62,7 @@ exports[`SearchBar component renders correctly without crashing 1`] = `
                     role="button"
                   >
                     <div
-                      className="sc-ikJyIC jiFSBM"
+                      className="sc-jcFjpl cNaMaa"
                       id="checkInDate"
                       onClick={[MockFunction]}
                       role="button"
@@ -72,7 +72,7 @@ exports[`SearchBar component renders correctly without crashing 1`] = `
                       </label>
                       <Styled(styled.div)>
                         <div
-                          className="sc-gWXbKe sc-cCcXHH bDsznr"
+                          className="sc-iAKWXU sc-efQSVx bgeXMq"
                         >
                           Add dates
                         </div>
@@ -81,7 +81,7 @@ exports[`SearchBar component renders correctly without crashing 1`] = `
                   </styled.div>
                   <styled.div>
                     <div
-                      className="sc-jJoQJp ieuqeZ"
+                      className="sc-caiLqq bHYoXS"
                     />
                   </styled.div>
                   <styled.div
@@ -90,7 +90,7 @@ exports[`SearchBar component renders correctly without crashing 1`] = `
                     role="button"
                   >
                     <div
-                      className="sc-ikJyIC jiFSBM"
+                      className="sc-jcFjpl cNaMaa"
                       id="checkOutDate"
                       onClick={[MockFunction]}
                       role="button"
@@ -100,7 +100,7 @@ exports[`SearchBar component renders correctly without crashing 1`] = `
                       </label>
                       <Styled(styled.div)>
                         <div
-                          className="sc-gWXbKe sc-cidDSM bDsznr"
+                          className="sc-iAKWXU sc-cTAqQK bgeXMq"
                         >
                           Add dates
                         </div>
@@ -109,14 +109,14 @@ exports[`SearchBar component renders correctly without crashing 1`] = `
                   </styled.div>
                   <styled.div>
                     <div
-                      className="sc-jJoQJp ieuqeZ"
+                      className="sc-caiLqq bHYoXS"
                     />
                   </styled.div>
                 </div>
               </styled.div>
               <styled.div>
                 <div
-                  className="sc-kLwhqv dRTrnp"
+                  className="sc-cidDSM fWeKsa"
                 >
                   <styled.div
                     id="guests"
@@ -124,7 +124,7 @@ exports[`SearchBar component renders correctly without crashing 1`] = `
                     role="button"
                   >
                     <div
-                      className="sc-ikJyIC jiFSBM"
+                      className="sc-jcFjpl cNaMaa"
                       id="guests"
                       onClick={[MockFunction]}
                       role="button"
@@ -134,7 +134,7 @@ exports[`SearchBar component renders correctly without crashing 1`] = `
                       </label>
                       <Styled(styled.div)>
                         <div
-                          className="sc-gWXbKe sc-jcFjpl bDsznr"
+                          className="sc-iAKWXU sc-jObWnj bgeXMq"
                         >
                           Add guests
                         </div>
@@ -143,11 +143,11 @@ exports[`SearchBar component renders correctly without crashing 1`] = `
                   </styled.div>
                   <styled.div>
                     <div
-                      className="sc-caiLqq hlDqpS"
+                      className="sc-dPiLbb iykPHk"
                     >
                       <styled.button>
                         <button
-                          className="sc-hKwDye bfryip"
+                          className="sc-eCImPb cUUKCJ"
                         >
                           <Search>
                             <StyledIconBase
