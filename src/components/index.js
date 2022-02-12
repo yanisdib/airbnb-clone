@@ -1,4 +1,5 @@
 export { default as Container } from './Container/Container';
+export { default as Button } from './Button/Button';
 export { default as Dropdown } from './Dropdown/Dropdown';
 export { default as CardGrid } from './CardGrid/CardGrid';
 
@@ -13,3 +14,4 @@ export { default as Header } from './Header/Header';
 export { default as Hero } from './Hero/Hero';
 
 export { default as TripSuggestion } from './TripSuggestion/TripSuggestion';
+export { default as ExperiencesSection } from './ExperiencesSection/ExperienceSection';
