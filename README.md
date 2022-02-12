@@ -65,5 +65,3 @@ Coming soon
 ```javascript
     console.log(`Oops, there's nothing here.`)
 ```
-
-![Imgur](https://i.imgur.com/YTbx893.png)
