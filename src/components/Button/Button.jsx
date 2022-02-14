@@ -13,10 +13,13 @@ export default styled.button`
 
     display: flex;
     justify-content: var(--btn-justify-content);
+    width: fit-content;
+    height: fit-content;
     background: var(${({ variant }) => variant ? '--btn-alt-color' : '--btn-default-color'});
     color: var(${({ variant }) => variant ? '--btn-default-color' : '--btn-alt-color'});
     font-size: var(--btn-font-size);
     font-weight: var(--btn-font-weight);
     line-height: var(--btn-line-height);
-    padding: var(--btn-padding-y), var(--btn-padding-x);
+    padding: var(--btn-padding-y) var(--btn-padding-x);
+    border-radius: 12px;
 `;
