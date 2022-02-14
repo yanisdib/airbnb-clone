@@ -31,6 +31,17 @@ export default createGlobalStyle`
         /** GUTTERS */
         --ui-padding-x: 10px;
         --ui-padding-y: 15px;
+
+        --mls-sc-spt-xs: 48px;
+        --mls-sc-spb-xs: 0px;
+        --mls-sc-spt-sm: 48px;
+        --mls-sc-spb-sm: 0px;
+        --mls-sc-spt-md: 64px;
+        --mls-sc-spb-md: 0px;
+        --mls-sc-spt-lg: 96px;
+        --mls-sc-spb-lg: 0px;
+        --mls-sc-spt-xl: 96px;
+        --mls-sc-spb-xl: 0px;
     }
 
     body {
