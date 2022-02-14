@@ -4,7 +4,7 @@ exports[`ExperiencesSection component renders correctly without crashing 1`] = `
 <Experiencesection>
   <styled.div>
     <div
-      className="sc-iAKWXU eSxgFC"
+      className="sc-iAKWXU kVatrt"
     >
       <styled.div>
         <div
@@ -21,7 +21,9 @@ exports[`ExperiencesSection component renders correctly without crashing 1`] = `
                   <styled.button>
                     <button
                       className="sc-gsDKAQ hHORsZ"
-                    />
+                    >
+                      Experiences
+                    </button>
                   </styled.button>
                 </div>
               </styled.div>
@@ -32,7 +34,9 @@ exports[`ExperiencesSection component renders correctly without crashing 1`] = `
                   <styled.button>
                     <button
                       className="sc-gsDKAQ hHORsZ"
-                    />
+                    >
+                      Online Experiences
+                    </button>
                   </styled.button>
                 </div>
               </styled.div>
