@@ -4,5 +4,6 @@ exports[`Home page renders correctly without crashing 1`] = `
 <Fragment>
   <Hero />
   <TripSuggestion />
+  <Experiencesection />
 </Fragment>
 `;

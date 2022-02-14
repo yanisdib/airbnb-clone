@@ -1,4 +1,4 @@
-import { Hero, TripSuggestion } from '../../components';
+import { ExperiencesSection, Hero, TripSuggestion } from '../../components';
 
 
 function Home() {
@@ -6,6 +6,7 @@ function Home() {
     <>
       <Hero />
       <TripSuggestion />
+      <ExperiencesSection />
     </>
   );
 }
