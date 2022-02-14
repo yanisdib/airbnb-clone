@@ -4,7 +4,7 @@ exports[`TripSuggestion component renders correctly without crashing 1`] = `
 <TripSuggestion>
   <styled.div>
     <div
-      className="sc-iUKqMP zfAfw"
+      className="sc-iUKqMP hXylqK"
     >
       <styled.div>
         <div
@@ -16,14 +16,17 @@ exports[`TripSuggestion component renders correctly without crashing 1`] = `
             >
               <styled.div>
                 <div
-                  className="sc-efQSVx inTfYM"
+                  className="sc-efQSVx hJHLbd"
                 >
+                  <h1>
+                    Inspiration for your next trip
+                  </h1>
                   <styled.div>
                     <div
                       className="sc-hKwDye bCtFQq"
                     >
                       <styled.div
-                        key="db2db1d9-a0ad-47e2-bf1d-8583ceda2453"
+                        key="f3d98950-7128-4f48-80ff-4a56ae22fbd5"
                       >
                         <div
                           className="sc-cTAqQK oIbSG"
@@ -33,7 +36,7 @@ exports[`TripSuggestion component renders correctly without crashing 1`] = `
                           />
                           <styled.h2>
                             <h2
-                              className="sc-jObWnj HGpB"
+                              className="sc-jObWnj hTvdLS"
                             >
                               Barcelonette
                             </h2>
@@ -49,7 +52,7 @@ exports[`TripSuggestion component renders correctly without crashing 1`] = `
                         </div>
                       </styled.div>
                       <styled.div
-                        key="4d40bb12-d5bd-4440-a017-f7758f361c3f"
+                        key="e9b97f63-2043-4451-844d-6d8350a6b528"
                       >
                         <div
                           className="sc-cTAqQK oIbSG"
@@ -59,7 +62,7 @@ exports[`TripSuggestion component renders correctly without crashing 1`] = `
                           />
                           <styled.h2>
                             <h2
-                              className="sc-jObWnj HGpB"
+                              className="sc-jObWnj hTvdLS"
                             >
                               Vars
                             </h2>
@@ -75,7 +78,7 @@ exports[`TripSuggestion component renders correctly without crashing 1`] = `
                         </div>
                       </styled.div>
                       <styled.div
-                        key="b0e4dff3-972d-42f0-9b3b-1e7befc5e66d"
+                        key="79977fc0-cd42-4550-a72e-6d3041ec7b36"
                       >
                         <div
                           className="sc-cTAqQK oIbSG"
@@ -85,7 +88,7 @@ exports[`TripSuggestion component renders correctly without crashing 1`] = `
                           />
                           <styled.h2>
                             <h2
-                              className="sc-jObWnj HGpB"
+                              className="sc-jObWnj hTvdLS"
                             >
                               Allos
                             </h2>
@@ -101,7 +104,7 @@ exports[`TripSuggestion component renders correctly without crashing 1`] = `
                         </div>
                       </styled.div>
                       <styled.div
-                        key="a2cfcf82-429e-4f69-8b7b-1dc72581aef8"
+                        key="b72aa7ae-ffff-40e4-b23a-0b6cbced5479"
                       >
                         <div
                           className="sc-cTAqQK oIbSG"
@@ -111,7 +114,7 @@ exports[`TripSuggestion component renders correctly without crashing 1`] = `
                           />
                           <styled.h2>
                             <h2
-                              className="sc-jObWnj HGpB"
+                              className="sc-jObWnj hTvdLS"
                             >
                               Porto Vecchio
                             </h2>

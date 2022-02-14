@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {v4 as uuidv4} from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 
 import { Container, CardGrid } from '..';
 
@@ -23,21 +23,11 @@ const Section = styled.div`
     --sub-letter-spacing: -0.01em;
     --sub-line-height: 22px;
 
-    --mls-sc-spt-xs: 48px;
-    --mls-sc-spb-xs: 0px;
-    --mls-sc-spt-sm: 48px;
-    --mls-sc-spb-sm: 0px;
-    --mls-sc-spt-md: 64px;
-    --mls-sc-spb-md: 0px;
-    --mls-sc-spt-lg: 96px;
-    --mls-sc-spb-lg: 0px;
-    --mls-sc-spt-xl: 96px;
-    --mls-sc-spb-xl: 0px;
-
     @media (min-width: 375px) {
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
         background: #FFFFFF;
         padding-top: var(--mls-sc-spt-xs);
         padding-bottom: var(--mls-sc-spb-xs);
@@ -74,10 +64,27 @@ const Section = styled.div`
 
 const Wrapper = styled.div`
     display: flex;
+    width: inherit;    
+    align-items: center;
+    justify-content: center;
 `;
 
 const Content = styled.div`
     display: flex;
+    flex-direction: column;
+    width: inherit;
+
+    h1 {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        font-size: 38px;
+        font-weight: 600;
+        color: #222222;
+        letter-spacing: var(--tl-letter-spacing, 0em);
+        white-space: pre-line;
+        padding-bottom: 48px;
+    }
 `;
 
 const CityCard = styled.div`
@@ -85,6 +92,7 @@ const CityCard = styled.div`
     height: 510px;
     background-color: var(--mls-ct-bg, none);
     border-radius: 12px;
+    white-space: pre-line;
 
     img {
         width: 100%;
@@ -96,22 +104,24 @@ const CityCard = styled.div`
 
 const CardTitle = styled.h2`
     max-width: 100%;
-    font-size: var(--tl-font-size, 32px);
-    font-weight: var(--tl-font-weight, 800);
-    color: var(--tl-color, #222222);
-    letter-spacing: var(--tl-letter-spacing, 0em);
-    line-height: var(--tl-line-height, 36px);
+    font-size: var(--tl-font-size, 32px) !important;
+    font-weight: var(--tl-font-weight, 800) !important;
+    color: var(--tl-color, #222222) !important;
+    letter-spacing: var(--tl-letter-spacing, 0em) !important;
+    line-height: var(--tl-line-height, 36px) !important;
     white-space: pre-line;
     padding: 24px 16px 16px;
 `;
 
-const CityDistance = styled.span`
+const CityDistance = styled.h3`
+    max-width: 100%;
     font-size: var(--sub-font-size, 14px);
     font-weight: var(--sub-font-weight, 400);
     color: var(--tl-color, #717171);
     letter-spacing: var(--sub-letter-spacing, 0em);
     line-height: var(--sub-line-height, 18px);
     padding: 0px 16px 16px;
+    white-space: pre-line;
 `;
 
 
@@ -135,12 +145,13 @@ function TripSuggestion() {
         );
     });
 
-    
+
     return (
         <Section>
             <Wrapper>
                 <Container>
                     <Content>
+                        <h1>Inspiration for your next trip</h1>
                         <CardGrid>
                             {suggestedCitiesCards}
                         </CardGrid>
